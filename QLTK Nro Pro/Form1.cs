@@ -294,18 +294,11 @@ namespace QLTK_Nro_Pro
         {
             if (e.RowIndex >= 0)
             {
+                Thread.Sleep(500);
                 try
                 {
                     int index = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
-                    Thread thread = new Thread((ThreadStart)delegate
-                    {
-                        smethod_3(index +1);
-                    });
-                    thread.IsBackground = true;
-                    thread.Start();
-                    Thread.Sleep(1200);
-                    
-
+                    smethod_3(index + 1);
                 }
                 catch
                 {
@@ -376,6 +369,484 @@ namespace QLTK_Nro_Pro
         private void btn_sapXep_Click(object sender, EventArgs e)
         {
             SortWindows();
+        }
+        private void nextMap (int x)
+        {
+            File.WriteAllText("Data/LoadMap.ini", "T|"+ x.ToString());
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            nextMap(44);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            nextMap(14);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            nextMap(15);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            nextMap(16);
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            nextMap(17);
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            nextMap(18);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            nextMap(20);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            nextMap(19);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            nextMap(35);
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            nextMap(36);
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            nextMap(37);
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            nextMap(38);
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            nextMap(52);
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            nextMap(26);
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            nextMap(129);
+        }
+
+        private void button95_Click(object sender, EventArgs e)
+        {
+            nextMap(113);
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            nextMap(42);
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            nextMap(0);
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            nextMap(1);
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            nextMap(2);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            nextMap(3);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            nextMap(4);
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            nextMap(5);
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            nextMap(6);
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            nextMap(27);
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            nextMap(28);
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            nextMap(29);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            nextMap(30);
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            nextMap(47);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            nextMap(24);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            nextMap(46);
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            nextMap(45);
+        }
+
+        private void button35_Click(object sender, EventArgs e)
+        {
+            nextMap(48);
+        }
+
+        private void button49_Click(object sender, EventArgs e)
+        {
+            nextMap(43);
+        }
+
+        private void button48_Click(object sender, EventArgs e)
+        {
+            nextMap(7);
+        }
+
+        private void button46_Click(object sender, EventArgs e)
+        {
+            nextMap(8);
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            nextMap(12);
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            nextMap(11);
+        }
+
+        private void button45_Click(object sender, EventArgs e)
+        {
+            nextMap(13);
+        }
+
+        private void button44_Click(object sender, EventArgs e)
+        {
+            nextMap(10);
+        }
+
+        private void button43_Click(object sender, EventArgs e)
+        {
+            nextMap(31);
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+            nextMap(32);
+        }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            nextMap(33);
+        }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+            nextMap(34);
+        }
+
+        private void button38_Click(object sender, EventArgs e)
+        {
+            nextMap(25);
+        }
+
+        private void button60_Click(object sender, EventArgs e)
+        {
+            nextMap(68);
+        }
+
+        private void button59_Click(object sender, EventArgs e)
+        {
+            nextMap(69);
+        }
+
+        private void button58_Click(object sender, EventArgs e)
+        {
+            nextMap(70);
+        }
+
+        private void button57_Click(object sender, EventArgs e)
+        {
+            nextMap(71);
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            nextMap(72);
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            nextMap(64);
+        }
+
+        private void button56_Click(object sender, EventArgs e)
+        {
+            nextMap(65);
+        }
+
+        private void button55_Click(object sender, EventArgs e)
+        {
+            nextMap(63);
+        }
+
+        private void button54_Click(object sender, EventArgs e)
+        {
+            nextMap(66);
+        }
+
+        private void button53_Click(object sender, EventArgs e)
+        {
+            nextMap(67);
+        }
+
+        private void button52_Click(object sender, EventArgs e)
+        {
+            nextMap(73);
+        }
+
+        private void button51_Click(object sender, EventArgs e)
+        {
+            nextMap(74);
+        }
+
+        private void button50_Click(object sender, EventArgs e)
+        {
+            nextMap(75);
+        }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+            nextMap(76);
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            nextMap(77);
+        }
+
+        private void button63_Click(object sender, EventArgs e)
+        {
+            nextMap(81);
+        }
+
+        private void button62_Click(object sender, EventArgs e)
+        {
+            nextMap(82);
+        }
+
+        private void button61_Click(object sender, EventArgs e)
+        {
+            nextMap(83);
+        }
+
+        private void button66_Click(object sender, EventArgs e)
+        {
+            nextMap(79);
+        }
+
+        private void button65_Click(object sender, EventArgs e)
+        {
+            nextMap(80);
+        }
+
+        private void button78_Click(object sender, EventArgs e)
+        {
+            nextMap(102);
+        }
+
+        private void button77_Click(object sender, EventArgs e)
+        {
+            nextMap(92);
+        }
+
+        private void button76_Click(object sender, EventArgs e)
+        {
+            nextMap(93);
+        }
+
+        private void button75_Click(object sender, EventArgs e)
+        {
+            nextMap(94);
+        }
+
+        private void button64_Click(object sender, EventArgs e)
+        {
+            nextMap(96);
+        }
+
+        private void button74_Click(object sender, EventArgs e)
+        {
+            nextMap(97);
+        }
+
+        private void button72_Click(object sender, EventArgs e)
+        {
+            nextMap(98);
+        }
+
+        private void button71_Click(object sender, EventArgs e)
+        {
+            nextMap(99);
+        }
+
+        private void button70_Click(object sender, EventArgs e)
+        {
+            nextMap(100);
+        }
+
+        private void button69_Click(object sender, EventArgs e)
+        {
+            nextMap(103);
+        }
+
+        private void button90_Click(object sender, EventArgs e)
+        {
+            nextMap(109);
+        }
+
+        private void button89_Click(object sender, EventArgs e)
+        {
+            nextMap(108);
+        }
+
+        private void button88_Click(object sender, EventArgs e)
+        {
+            nextMap(107);
+        }
+
+        private void button87_Click(object sender, EventArgs e)
+        {
+            nextMap(110);
+        }
+
+        private void button86_Click(object sender, EventArgs e)
+        {
+            nextMap(106);
+        }
+
+        private void button85_Click(object sender, EventArgs e)
+        {
+            nextMap(105);
+        }
+
+        private void button98_Click(object sender, EventArgs e)
+        {
+            nextMap(131);
+        }
+
+        private void button97_Click(object sender, EventArgs e)
+        {
+            nextMap(132);
+        }
+
+        private void button96_Click(object sender, EventArgs e)
+        {
+            nextMap(133);
+        }
+
+        private void button73_Click(object sender, EventArgs e)
+        {
+            nextMap(53);
+        }
+
+        private void button84_Click(object sender, EventArgs e)
+        {
+            nextMap(58);
+        }
+
+        private void button80_Click(object sender, EventArgs e)
+        {
+            nextMap(59);
+        }
+
+        private void button83_Click(object sender, EventArgs e)
+        {
+            nextMap(60);
+        }
+
+        private void button79_Click(object sender, EventArgs e)
+        {
+            nextMap(61);
+        }
+
+        private void button92_Click(object sender, EventArgs e)
+        {
+            nextMap(62);
+        }
+
+        private void button82_Click(object sender, EventArgs e)
+        {
+            nextMap(55);
+        }
+
+        private void button91_Click(object sender, EventArgs e)
+        {
+            nextMap(56);
+        }
+
+        private void button81_Click(object sender, EventArgs e)
+        {
+            nextMap(54);
+        }
+
+        private void button93_Click(object sender, EventArgs e)
+        {
+            nextMap(57);
+        }
+
+        private void button94_Click(object sender, EventArgs e)
+        {
+            nextMap(84);
         }
     }
 
