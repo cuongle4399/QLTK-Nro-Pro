@@ -19,6 +19,10 @@ namespace QLTK_Nro_Pro
         public static string string_1 = Path.Combine(string_0, "data");
         public static bool bool_0;
         public static string string_4 = Path.Combine(Application.StartupPath, "Dragonboy_vn_v222.exe");
+        public static string filePath = "Data/size.ini";
+        public static string ChatPublic = "Data/TextChatPublic.ini";
+        public static string ChatGlobal = "Data/TextChatGlobal.ini";
+        public static string ChatInbox = "Data/TextChatInbox.ini";
 
         public Form1()
         {
@@ -27,6 +31,23 @@ namespace QLTK_Nro_Pro
         private int indexSTT = 0;
         private void Form1_Load(object sender, EventArgs e)
         {
+            try {
+                string[] a = File.ReadAllText(filePath).Split('|');
+                txtX.Text = a[0];
+                txtY.Text = a[1];
+            }
+            catch { }
+            try
+            {
+                txtPublic.Text = File.ReadAllText(ChatPublic);
+                txtInbox.Text = File.ReadAllText(ChatInbox);
+                txtGlobal.Text = File.ReadAllText(ChatGlobal);
+            }
+            catch
+            {
+
+            }
+            
             foreach (DataGridViewColumn column in dataGridView1.Columns)
             {
                 column.SortMode = DataGridViewColumnSortMode.NotSortable;
@@ -368,6 +389,11 @@ namespace QLTK_Nro_Pro
        
         private void btn_sapXep_Click(object sender, EventArgs e)
         {
+            if(int.Parse(txtX.Text) > 720 && int.Parse(txtY.Text) > 320)
+            {
+                MessageBox.Show("Yêu cầu kích thước game phải nhỏ hơn 720 x 320 để tránh lỗi", "Thông báo");
+                return;
+            }
             SortWindows();
         }
         private void nextMap (int x)
@@ -847,6 +873,32 @@ namespace QLTK_Nro_Pro
         private void button94_Click(object sender, EventArgs e)
         {
             nextMap(84);
+        }
+
+        private void button67_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText("Data/LoadMap.ini", "F|-1");
+            MessageBox.Show("Đã Khôi phục NextMap khắc phục lỗi", "Thông báo");
+        }
+
+        private void btnUpdateSize_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(txtX.Text) || string.IsNullOrEmpty(txtY.Text))
+            {
+                MessageBox.Show("Nhập đầy đủ kích thước theo chiều ngang và chiều dọc","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }
+            File.WriteAllText(filePath, txtX.Text + '|' + txtY.Text + '|' + '0');
+            MessageBox.Show("Đã cập nhập kích thước game thành công", "Thông báo");
+
+        }
+
+        private void button68_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText(ChatGlobal, txtGlobal.Text);
+            File.WriteAllText(ChatPublic, txtPublic.Text);
+            File.WriteAllText(ChatInbox, txtInbox.Text);
+            MessageBox.Show("Đã cập nhập nội dung chat thành công", "Thông báo");
         }
     }
 
