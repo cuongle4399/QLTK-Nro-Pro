@@ -49,6 +49,15 @@
             this.ghiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtGlobal = new System.Windows.Forms.TextBox();
+            this.txtInbox = new System.Windows.Forms.TextBox();
+            this.txtPublic = new System.Windows.Forms.TextBox();
+            this.button68 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnUpdateSize = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtY = new System.Windows.Forms.TextBox();
+            this.txtX = new System.Windows.Forms.TextBox();
             this.button67 = new System.Windows.Forms.Button();
             this.btn_sapXep = new System.Windows.Forms.Button();
             this.btn_dong = new System.Windows.Forms.Button();
@@ -158,19 +167,17 @@
             this.button96 = new System.Windows.Forms.Button();
             this.button97 = new System.Windows.Forms.Button();
             this.button98 = new System.Windows.Forms.Button();
-            this.txtX = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtY = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnUpdateSize = new System.Windows.Forms.Button();
-            this.button68 = new System.Windows.Forms.Button();
-            this.txtPublic = new System.Windows.Forms.TextBox();
-            this.txtInbox = new System.Windows.Forms.TextBox();
-            this.txtGlobal = new System.Windows.Forms.TextBox();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.button99 = new System.Windows.Forms.Button();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.btnfb = new System.Windows.Forms.Button();
+            this.btnZaloSuper2 = new System.Windows.Forms.Button();
+            this.btnCapNhap = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -180,7 +187,8 @@
             this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tabPage9.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.tabPage10.SuspendLayout();
+            this.tabPage11.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -412,6 +420,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage11);
             this.tabControl1.Location = new System.Drawing.Point(371, 15);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
@@ -441,6 +450,85 @@
             this.tabPage1.Size = new System.Drawing.Size(568, 345);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Quản lý tài khoản";
+            // 
+            // txtGlobal
+            // 
+            this.txtGlobal.Location = new System.Drawing.Point(7, 283);
+            this.txtGlobal.Name = "txtGlobal";
+            this.txtGlobal.Size = new System.Drawing.Size(296, 27);
+            this.txtGlobal.TabIndex = 19;
+            // 
+            // txtInbox
+            // 
+            this.txtInbox.Location = new System.Drawing.Point(7, 315);
+            this.txtInbox.Name = "txtInbox";
+            this.txtInbox.Size = new System.Drawing.Size(296, 27);
+            this.txtInbox.TabIndex = 18;
+            // 
+            // txtPublic
+            // 
+            this.txtPublic.Location = new System.Drawing.Point(7, 250);
+            this.txtPublic.Name = "txtPublic";
+            this.txtPublic.Size = new System.Drawing.Size(296, 27);
+            this.txtPublic.TabIndex = 17;
+            // 
+            // button68
+            // 
+            this.button68.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button68.Location = new System.Drawing.Point(7, 207);
+            this.button68.Margin = new System.Windows.Forms.Padding(4);
+            this.button68.Name = "button68";
+            this.button68.Size = new System.Drawing.Size(130, 32);
+            this.button68.TabIndex = 16;
+            this.button68.Text = "Update Chat";
+            this.button68.UseVisualStyleBackColor = true;
+            this.button68.Click += new System.EventHandler(this.button68_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnUpdateSize);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.txtY);
+            this.groupBox2.Controls.Add(this.txtX);
+            this.groupBox2.Location = new System.Drawing.Point(316, 207);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(243, 131);
+            this.groupBox2.TabIndex = 15;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Kích Thước game";
+            // 
+            // btnUpdateSize
+            // 
+            this.btnUpdateSize.Location = new System.Drawing.Point(39, 80);
+            this.btnUpdateSize.Name = "btnUpdateSize";
+            this.btnUpdateSize.Size = new System.Drawing.Size(186, 36);
+            this.btnUpdateSize.TabIndex = 17;
+            this.btnUpdateSize.Text = "Update";
+            this.btnUpdateSize.UseVisualStyleBackColor = true;
+            this.btnUpdateSize.Click += new System.EventHandler(this.btnUpdateSize_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(121, 50);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(21, 20);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "X";
+            // 
+            // txtY
+            // 
+            this.txtY.Location = new System.Drawing.Point(147, 43);
+            this.txtY.Name = "txtY";
+            this.txtY.Size = new System.Drawing.Size(78, 27);
+            this.txtY.TabIndex = 15;
+            // 
+            // txtX
+            // 
+            this.txtX.Location = new System.Drawing.Point(39, 43);
+            this.txtX.Name = "txtX";
+            this.txtX.Size = new System.Drawing.Size(78, 27);
+            this.txtX.TabIndex = 14;
             // 
             // button67
             // 
@@ -511,6 +599,7 @@
             this.tabControl2.Controls.Add(this.tabPage7);
             this.tabControl2.Controls.Add(this.tabPage8);
             this.tabControl2.Controls.Add(this.tabPage9);
+            this.tabControl2.Controls.Add(this.tabPage10);
             this.tabControl2.Location = new System.Drawing.Point(8, 8);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
@@ -1824,84 +1913,83 @@
             this.button98.UseVisualStyleBackColor = true;
             this.button98.Click += new System.EventHandler(this.button98_Click);
             // 
-            // txtX
+            // tabPage10
             // 
-            this.txtX.Location = new System.Drawing.Point(39, 43);
-            this.txtX.Name = "txtX";
-            this.txtX.Size = new System.Drawing.Size(78, 27);
-            this.txtX.TabIndex = 14;
+            this.tabPage10.Controls.Add(this.button99);
+            this.tabPage10.Location = new System.Drawing.Point(4, 29);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(545, 297);
+            this.tabPage10.TabIndex = 7;
+            this.tabPage10.Text = "go Home";
+            this.tabPage10.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // button99
             // 
-            this.groupBox2.Controls.Add(this.btnUpdateSize);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.txtY);
-            this.groupBox2.Controls.Add(this.txtX);
-            this.groupBox2.Location = new System.Drawing.Point(316, 207);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(243, 131);
-            this.groupBox2.TabIndex = 15;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Kích Thước game";
+            this.button99.BackColor = System.Drawing.Color.Silver;
+            this.button99.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button99.ForeColor = System.Drawing.Color.Red;
+            this.button99.Location = new System.Drawing.Point(166, 110);
+            this.button99.Name = "button99";
+            this.button99.Size = new System.Drawing.Size(203, 69);
+            this.button99.TabIndex = 0;
+            this.button99.Text = "Về nhà";
+            this.button99.UseVisualStyleBackColor = false;
+            this.button99.Click += new System.EventHandler(this.button99_Click);
             // 
-            // txtY
+            // tabPage11
             // 
-            this.txtY.Location = new System.Drawing.Point(147, 43);
-            this.txtY.Name = "txtY";
-            this.txtY.Size = new System.Drawing.Size(78, 27);
-            this.txtY.TabIndex = 15;
+            this.tabPage11.Controls.Add(this.btnCapNhap);
+            this.tabPage11.Controls.Add(this.btnZaloSuper2);
+            this.tabPage11.Controls.Add(this.btnfb);
+            this.tabPage11.Location = new System.Drawing.Point(4, 29);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(568, 345);
+            this.tabPage11.TabIndex = 2;
+            this.tabPage11.Text = "Thông tin Mod";
+            this.tabPage11.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // btnfb
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(121, 50);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 20);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "X";
+            this.btnfb.BackColor = System.Drawing.Color.BlueViolet;
+            this.btnfb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnfb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfb.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnfb.Location = new System.Drawing.Point(7, 7);
+            this.btnfb.Name = "btnfb";
+            this.btnfb.Size = new System.Drawing.Size(553, 45);
+            this.btnfb.TabIndex = 0;
+            this.btnfb.Text = "Facebook Cường Lê";
+            this.btnfb.UseVisualStyleBackColor = false;
+            this.btnfb.Click += new System.EventHandler(this.btnfb_Click);
             // 
-            // btnUpdateSize
+            // btnZaloSuper2
             // 
-            this.btnUpdateSize.Location = new System.Drawing.Point(39, 80);
-            this.btnUpdateSize.Name = "btnUpdateSize";
-            this.btnUpdateSize.Size = new System.Drawing.Size(186, 36);
-            this.btnUpdateSize.TabIndex = 17;
-            this.btnUpdateSize.Text = "Update";
-            this.btnUpdateSize.UseVisualStyleBackColor = true;
-            this.btnUpdateSize.Click += new System.EventHandler(this.btnUpdateSize_Click);
+            this.btnZaloSuper2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnZaloSuper2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZaloSuper2.ForeColor = System.Drawing.Color.Blue;
+            this.btnZaloSuper2.Location = new System.Drawing.Point(7, 58);
+            this.btnZaloSuper2.Name = "btnZaloSuper2";
+            this.btnZaloSuper2.Size = new System.Drawing.Size(553, 45);
+            this.btnZaloSuper2.TabIndex = 1;
+            this.btnZaloSuper2.Text = "Box zalo lớn nhất Nro Super 2";
+            this.btnZaloSuper2.UseVisualStyleBackColor = true;
+            this.btnZaloSuper2.Click += new System.EventHandler(this.btnZaloSuper2_Click);
             // 
-            // button68
+            // btnCapNhap
             // 
-            this.button68.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button68.Location = new System.Drawing.Point(7, 207);
-            this.button68.Margin = new System.Windows.Forms.Padding(4);
-            this.button68.Name = "button68";
-            this.button68.Size = new System.Drawing.Size(130, 32);
-            this.button68.TabIndex = 16;
-            this.button68.Text = "Update Chat";
-            this.button68.UseVisualStyleBackColor = true;
-            this.button68.Click += new System.EventHandler(this.button68_Click);
-            // 
-            // txtPublic
-            // 
-            this.txtPublic.Location = new System.Drawing.Point(7, 250);
-            this.txtPublic.Name = "txtPublic";
-            this.txtPublic.Size = new System.Drawing.Size(296, 27);
-            this.txtPublic.TabIndex = 17;
-            // 
-            // txtInbox
-            // 
-            this.txtInbox.Location = new System.Drawing.Point(7, 315);
-            this.txtInbox.Name = "txtInbox";
-            this.txtInbox.Size = new System.Drawing.Size(296, 27);
-            this.txtInbox.TabIndex = 18;
-            // 
-            // txtGlobal
-            // 
-            this.txtGlobal.Location = new System.Drawing.Point(7, 283);
-            this.txtGlobal.Name = "txtGlobal";
-            this.txtGlobal.Size = new System.Drawing.Size(296, 27);
-            this.txtGlobal.TabIndex = 19;
+            this.btnCapNhap.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnCapNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhap.ForeColor = System.Drawing.Color.Black;
+            this.btnCapNhap.Location = new System.Drawing.Point(7, 109);
+            this.btnCapNhap.Name = "btnCapNhap";
+            this.btnCapNhap.Size = new System.Drawing.Size(553, 45);
+            this.btnCapNhap.TabIndex = 2;
+            this.btnCapNhap.Text = "Cập Nhập phiên bản mod";
+            this.btnCapNhap.UseVisualStyleBackColor = false;
+            this.btnCapNhap.Click += new System.EventHandler(this.btnCapNhap_Click);
             // 
             // Form1
             // 
@@ -1925,6 +2013,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
@@ -1934,8 +2024,8 @@
             this.tabPage7.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
             this.tabPage9.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.tabPage10.ResumeLayout(false);
+            this.tabPage11.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2080,6 +2170,12 @@
         private System.Windows.Forms.TextBox txtInbox;
         private System.Windows.Forms.TextBox txtPublic;
         private System.Windows.Forms.TextBox txtGlobal;
+        private System.Windows.Forms.TabPage tabPage10;
+        private System.Windows.Forms.Button button99;
+        private System.Windows.Forms.TabPage tabPage11;
+        private System.Windows.Forms.Button btnCapNhap;
+        private System.Windows.Forms.Button btnZaloSuper2;
+        private System.Windows.Forms.Button btnfb;
     }
 }
 

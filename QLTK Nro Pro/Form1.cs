@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Common;
 using System.Diagnostics;
 using System.IO;
+using System.Net;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
@@ -31,7 +32,17 @@ namespace QLTK_Nro_Pro
         private int indexSTT = 0;
         private void Form1_Load(object sender, EventArgs e)
         {
-            try {
+            if (!Directory.Exists(Path.Combine(Path.GetTempPath(), "koi occtiu957", "mod 222")))
+            {
+                Directory.CreateDirectory((Path.Combine(Path.GetTempPath(), "koi occtiu957", "mod 222")));
+                if (!File.Exists(string_1))
+                {
+                    File.Create(string_1).Close();
+                }
+            }
+
+            try
+            {
                 string[] a = File.ReadAllText(filePath).Split('|');
                 txtX.Text = a[0];
                 txtY.Text = a[1];
@@ -217,6 +228,7 @@ namespace QLTK_Nro_Pro
                 int index = dataGridView1.CurrentCell.RowIndex;
                 dataGridView1.Rows.RemoveAt(index);
                 ghifile(dataGridView1);
+                dataGridView1.Rows.Clear();
             }
             else if (dataGridView1.RowCount == 1)
             {
@@ -899,6 +911,47 @@ namespace QLTK_Nro_Pro
             File.WriteAllText(ChatPublic, txtPublic.Text);
             File.WriteAllText(ChatInbox, txtInbox.Text);
             MessageBox.Show("Đã cập nhập nội dung chat thành công", "Thông báo");
+        }
+
+        private void button99_Click(object sender, EventArgs e)
+        {
+            nextMap(-99);
+        }
+
+        private void btnfb_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.facebook.com/cuongle1002/");
+        }
+
+        private void btnZaloSuper2_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://zalo.me/g/axbwpn039");
+        }
+
+        private void btnCapNhap_Click(object sender, EventArgs e)
+        {
+            using (WebClient webClient = new WebClient())
+            {
+                if (!webClient.DownloadString("https://www.dropbox.com/scl/fi/0iacu1ujg30nbl7suncea/checkVersionNro.txt?rlkey=7vcuj3zim83gvviimg8k26ns5&st=2g41ahjg&dl=1").Contains("1.2"))
+                {
+                    if (MessageBox.Show("Đã có phiên bản mới. Bạn có muốn cập nhập không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        try
+                        {
+                            Process.Start("https://drive.google.com/drive/u/0/folders/1-FQLm1txnoQcAtvkl27g7Osed58yRSgL");
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Lỗi update:  " + ex.Message, "Update Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Đang là phiên bản mới nhất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                }
+            }
+
         }
     }
 
